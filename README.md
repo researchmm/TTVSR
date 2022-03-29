@@ -5,11 +5,11 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 - [Introduction](#introduction)
   - [Contribution](#contribution)
   - [Overview](#overview)
-  - [Results](#Results)
+  - [Visual](#Visual)
 - [Requirements and dependencies](#requirements-and-dependencies)
-- [Model](#model)
+- [Model and Results](#model-and-results)
 - [Dataset](#dataset)
-- [Test](#quick-test)
+- [Test](#test)
 - [Train](#train)
 - [Citation](#citation)
 - [Acknowledgment](#acknowledgment)
@@ -27,7 +27,7 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 ### Overview
 <img src="./fig/framework_TTVSR.png" width=100%>
 
-### Results
+### Visual
 <img src="./fig/case_TTVSR.png" width=90%>
 
 ## Requirements and dependencies
@@ -40,9 +40,9 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 * yapf == 0.31.0
 * tensorboard == 2.6.0
 
-## Model
+## Model and Results
 <!-- Pre-trained models can be downloaded from [onedrive](https://1drv.ms/u/s!Ajav6U_IU-1gmHZstHQxOTn9MLPh?e=e06Q7A), [baidu cloud](https://pan.baidu.com/s/1j9swBtz14WneuMYgTLkWtA)(0u6i), [google drive](https://drive.google.com/drive/folders/1CTm-r3hSbdYVCySuQ27GsrqXhhVOS-qh?usp=sharing).
-* *TTSR-rec.pt*: trained with only reconstruction loss
+* *TTSR-rec.pt*: trained with only reconstruction lossmdp
 * *TTSR.pt*: trained with all losses
  -->
 
