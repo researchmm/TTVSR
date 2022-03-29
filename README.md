@@ -41,21 +41,25 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 * tensorboard == 2.6.0
 
 ## Model and Results
-<!-- Pre-trained models can be downloaded from [onedrive](https://1drv.ms/u/s!Ajav6U_IU-1gmHZstHQxOTn9MLPh?e=e06Q7A), [baidu cloud](https://pan.baidu.com/s/1j9swBtz14WneuMYgTLkWtA)(0u6i), [google drive](https://drive.google.com/drive/folders/1CTm-r3hSbdYVCySuQ27GsrqXhhVOS-qh?usp=sharing).
-* *TTSR-rec.pt*: trained with only reconstruction lossmdp
-* *TTSR.pt*: trained with all losses
- -->
+Pre-trained models can be downloaded from [onedrive](), [baidu cloud]()(xxxx), [google drive]().
+* *TTVSR_REDS.pth*: trained on REDS dataset.
+* *TTVSR_Vimeo90K.pth*: trained on Vimeo-90K dataset.
+
+The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](), [baidu cloud]()(xxxx), [google drive]().
+
 
 ## Dataset
-<!-- 1. Download [CUFED train set](https://drive.google.com/drive/folders/1hGHy36XcmSZ1LtARWmGL5OK1IUdWJi3I) and [CUFED test set](https://drive.google.com/file/d/1Fa1mopExA9YGG1RxrCZZn7QFTYXLx6ph/view)
-2. Make dataset structure be:
-- CUFED
-    - train
-        - input
-        - ref
-    - test
-        - CUFED5
- -->
+
+1. Train set
+	[REDS dataset](https://seungjunnah.github.io/Datasets/reds.html). We regroup the training and validation dataset into one folder. The original training dataset has 240 clips from 000 to 239. The original validation dataset were renamed from 240 to 269.
+	[Viemo-90K dataset](https://github.com/anchen1011/toflow). Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script degradation/BD_degradation.m (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
+2. Test set
+	[REDS4 dataset](https://seungjunnah.github.io/Datasets/reds.html). The 000, 011, 015, 020 clips from the original training dataset of REDS.
+    [Viemo-90K dataset](https://github.com/anchen1011/toflow). The `sep_testlist.txt` file listing the testing samples in the download zip file.
+    [Vid4 dataset](https://github.com/qiaopTDUN/bayesian-video-super-resolution). 
+    [UDM10 dataset](https://github.com/psychopa4/PFNL). 
+
+
 ## Test
 <!-- 1. Clone this github repo
 ```
