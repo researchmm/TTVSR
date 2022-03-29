@@ -51,13 +51,12 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 ## Dataset
 
 1. Train set
-	[REDS dataset](https://seungjunnah.github.io/Datasets/reds.html). We regroup the training and validation dataset into one folder. The original training dataset has 240 clips from 000 to 239. The original validation dataset were renamed from 240 to 269.
-	[Viemo-90K dataset](https://github.com/anchen1011/toflow). Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script degradation/BD_degradation.m (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
+	* [REDS](https://seungjunnah.github.io/Datasets/reds.html) dataset. We regroup the training and validation dataset into one folder. The original training dataset has 240 clips from 000 to 239. The original validation dataset were renamed from 240 to 269.
+	* [Viemo-90K](https://github.com/anchen1011/toflow) dataset. Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
 2. Test set
-	[REDS4 dataset](https://seungjunnah.github.io/Datasets/reds.html). The 000, 011, 015, 020 clips from the original training dataset of REDS.
-    [Viemo-90K dataset](https://github.com/anchen1011/toflow). The `sep_testlist.txt` file listing the testing samples in the download zip file.
-    [Vid4 dataset](https://github.com/qiaopTDUN/bayesian-video-super-resolution). 
-    [UDM10 dataset](https://github.com/psychopa4/PFNL). 
+	* [REDS4](https://seungjunnah.github.io/Datasets/reds.html) dataset. The 000, 011, 015, 020 clips from the original training dataset of REDS.
+    * [Viemo-90K](https://github.com/anchen1011/toflow) dataset. The `sep_testlist.txt` file listing the testing samples in the download zip file.
+    * [Vid4 and UDM10](https://www.terabox.com/web/share/link?surl=LMuQCVntRegfZSxn7s3hXw&path=%2Fproject%2Fpfnl) dataset. Use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images.
 
 
 ## Test
