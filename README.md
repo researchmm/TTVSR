@@ -42,18 +42,18 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 
 ## Model and Results
 Pre-trained models can be downloaded from [onedrive](), [baidu cloud]()(xxxx), [google drive]().
-* *TTVSR_REDS.pth*: trained on REDS dataset.
-* *TTVSR_Vimeo90K.pth*: trained on Vimeo-90K dataset.
+* *TTVSR_REDS.pth*: trained on REDS dataset with BI degradation.
+* *TTVSR_Vimeo90K.pth*: trained on Vimeo-90K dataset with BD degradation.
 
 The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](), [baidu cloud]()(xxxx), [google drive]().
 
 
 ## Dataset
 
-1. Train set
+1. Training set
 	* [REDS](https://seungjunnah.github.io/Datasets/reds.html) dataset. We regroup the training and validation dataset into one folder. The original training dataset has 240 clips from 000 to 239. The original validation dataset were renamed from 240 to 269.
 	* [Viemo-90K](https://github.com/anchen1011/toflow) dataset. Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
-2. Test set
+2. Testing set
 	* [REDS4](https://seungjunnah.github.io/Datasets/reds.html) dataset. The 000, 011, 015, 020 clips from the original training dataset of REDS.
     * [Viemo-90K](https://github.com/anchen1011/toflow) dataset. The `sep_testlist.txt` file listing the testing samples in the download zip file.
     * [Vid4 and UDM10](https://www.terabox.com/web/share/link?surl=LMuQCVntRegfZSxn7s3hXw&path=%2Fproject%2Fpfnl) dataset. Use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images.
