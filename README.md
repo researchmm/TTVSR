@@ -18,17 +18,17 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 
 ## Introduction
 <!-- We proposed an approach named TTSR for RefSR task. Compared to SISR, RefSR has an extra high-resolution reference image whose textures can be utilized to help super-resolve low-resolution input. -->
-<img src="./fig/teaser_TTVSR.pdf" width=100%>
+<img src="./fig/teaser_TTVSR.png" width=100%>
 
 ### Contribution
 <!-- 1. We are one of the first to introduce the transformer architecture into image generation tasks. More specifically, we propose a texture transformer with four closely-related modules for image SR which achieves significant improvements over SOTA approaches.
 2. We propose a novel cross-scale feature integration module for image generation tasks which enables our approach to learn a more powerful feature representation by stacking multiple texture transformers. -->
 
 ### Overview
-<img src="./fig/framework_TTVSR.pdf" width=100%>
+<img src="./fig/framework_TTVSR.png" width=100%>
 
 ### Results
-<img src="./fig/case_TTVSR.pdf" width=100%>
+<img src="./fig/case_TTVSR.png" width=100%>
 
 ## Requirements and dependencies
 * python 3.7 (recommend to use [Anaconda](https://www.anaconda.com/))
