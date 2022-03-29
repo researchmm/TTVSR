@@ -17,12 +17,12 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 
 
 ## Introduction
-<!-- We proposed an approach named TTSR for RefSR task. Compared to SISR, RefSR has an extra high-resolution reference image whose textures can be utilized to help super-resolve low-resolution input. -->
+We proposed an approach named TTVSR to study video super-resolution by leveraging long-range frame dependencies. TTVSR introduces Transformer architectures in video super-resolution tasks and formulates video frames into pre-aligned trajectories of visual tokens to calculate attention along trajectories.
 <img src="./fig/teaser_TTVSR.png" width=70%>
 
 ### Contribution
-<!-- 1. We are one of the first to introduce the transformer architecture into image generation tasks. More specifically, we propose a texture transformer with four closely-related modules for image SR which achieves significant improvements over SOTA approaches.
-2. We propose a novel cross-scale feature integration module for image generation tasks which enables our approach to learn a more powerful feature representation by stacking multiple texture transformers. -->
+We propose a novel trajectory-aware Transformer, which is one of the first works to introduce Transformer into video super-resolution tasks. TTVSR reduces computational costs and enables long-range modeling in videos. TTVSR can outperform existing SOTA methods in four widely-used VSR benchmarks.
+
 
 ### Overview
 <img src="./fig/framework_TTVSR.png" width=100%>
