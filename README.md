@@ -4,8 +4,8 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 ## Contents
 - [Introduction](#introduction)
   - [Contribution](#contribution)
-  - [Approach overview](#approach-overview)
-  - [Main results](#main-results)
+  - [Overview](#overview)
+  - [Results](#Results)
 - [Requirements and dependencies](#requirements-and-dependencies)
 - [Model](#model)
 - [Dataset](#dataset)
