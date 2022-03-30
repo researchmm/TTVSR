@@ -131,15 +131,15 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_vimeo90k
 git clone https://github.com/ChengxuLiu/TTVSR.git
 cd TTVSR
 ```
-1. Prepare training dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
-2. Run training
+2. Prepare training dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
+3. Run training
 ```
 # REDS
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_reds4.py 8
 # Vimeo
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_vimeo90k.py 8
 ```
-3. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
+4. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (also can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
 
 ## Citation
 ```
