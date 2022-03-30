@@ -52,8 +52,8 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 
 1. Training set
 	* [REDS](https://seungjunnah.github.io/Datasets/reds.html) dataset. We regroup the training and validation dataset into one folder. The original training dataset has 240 clips from 000 to 239. The original validation dataset were renamed from 240 to 269.
+		- Make REDS structure be:
 	    ```
-		├────Make REDS structure be:
 			├────REDS
 				├────train
 					├────train_sharp
@@ -68,8 +68,8 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
         ```
 
 	* [Viemo-90K](https://github.com/anchen1011/toflow) dataset. Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
+		- Make Vimeo-90K structure be:
 		```
-		├────Make Vimeo-90K structure be:
 			├────vimeo_septuplet
 				├────sequences
 					├────00001
@@ -87,8 +87,8 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 	* [REDS4](https://seungjunnah.github.io/Datasets/reds.html) dataset. The 000, 011, 015, 020 clips from the original training dataset of REDS.
     * [Viemo-90K](https://github.com/anchen1011/toflow) dataset. The `sep_testlist.txt` file listing the testing samples in the download zip file.
     * [Vid4 and UDM10](https://www.terabox.com/web/share/link?surl=LMuQCVntRegfZSxn7s3hXw&path=%2Fproject%2Fpfnl) dataset. Use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images.
+		- Make Vid4 and UDM10 structure be:
 		```
-		├────Make Vid4 and UDM10 structure be:
 			├────VID4
 				├────BD
 					├────calendar
@@ -108,6 +108,7 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 					├────...
 					├────polyflow
         ```
+        
 ## Test
 <!-- 1. Clone this github repo
 ```
