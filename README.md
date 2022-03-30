@@ -34,6 +34,7 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 * python 3.7 (recommend to use [Anaconda](https://www.anaconda.com/))
 * pytorch == 1.9.0
 * torchvision == 0.10.0
+* opencv-python == 4.5.3
 * mmcv-full == 1.3.9
 * scikit-image == 1.7.3
 * lmdb == 1.2.1
