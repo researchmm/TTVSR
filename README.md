@@ -66,7 +66,6 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 							├────...
 							├────269
         ```
-
 	* [Viemo-90K](https://github.com/anchen1011/toflow) dataset. Download the [original training + test set](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) and use the script 'degradation/BD_degradation.m' (run in MATLAB) to generate the low-resolution images. The `sep_trainlist.txt` file listing the training samples in the download zip file.
 		- Make Vimeo-90K structure be:
 		```
@@ -108,20 +107,21 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](),
 					├────...
 					├────polyflow
         ```
-        
+
 ## Test
-<!-- 1. Clone this github repo
+1. Clone this github repo
 ```
-git clone https://github.com/FuzhiYang/TTSR.git
-cd TTSR
+git clone https://github.com/ChengxuLiu/TTVSR.git
+cd TTVSR
 ```
-2. Download pre-trained models and modify "model_path" in test.sh
+2. Download pre-trained weights ([onedrive]()|[baidu cloud]()(xxxx)|[google drive]()) under `./checkpoint`
 3. Run test
 ```
-sh test.sh
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_reds4.py checkpoint/TTVSR_REDS.pth 8 [--save-path 'save_path']
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_vimeo90k.py checkpoint/TTVSR_Vimeo90K.pth 8 [--save-path 'save_path']
 ```
-4. The results are in "save_dir" (default: `./test/demo/output`)
- -->
+4. The results are in `save_path`.
+
 
 <!-- ## Evaluation
 1. Prepare CUFED dataset and modify "dataset_dir" in eval.sh
