@@ -115,30 +115,31 @@ git clone https://github.com/ChengxuLiu/TTVSR.git
 cd TTVSR
 ```
 2. Download pre-trained weights ([onedrive]()|[baidu cloud]()(xxxx)|[google drive]()) under `./checkpoint`
-3. Run test
+3. Prepare testing dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
+4. Run test
 ```
+# REDS model
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_reds4.py checkpoint/TTVSR_REDS.pth 8 [--save-path 'save_path']
+# Vimeo model
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_vimeo90k.py checkpoint/TTVSR_Vimeo90K.pth 8 [--save-path 'save_path']
 ```
-4. The results are in `save_path`.
-
-
-<!-- ## Evaluation
-1. Prepare CUFED dataset and modify "dataset_dir" in eval.sh
-2. Download pre-trained models and modify "model_path" in eval.sh
-3. Run evaluation
-```
-sh eval.sh
-```
-4. The results are in "save_dir" (default: `./eval/CUFED/TTSR`) -->
+5. The results are saved in `save_path`.
 
 ## Train
-<!-- 1. Prepare CUFED dataset and modify "dataset_dir" in train.sh
+1. Clone this github repo
+```
+git clone https://github.com/ChengxuLiu/TTVSR.git
+cd TTVSR
+```
+1. Prepare training dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
 2. Run training
 ```
-sh train.sh
+# REDS
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_reds4.py 8
+# Vimeo
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_vimeo90k.py 8
 ```
-3. The training results are in "save_dir" (default: `./train/CUFED/TTSR`) -->
+3. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
 
 ## Citation
 ```
