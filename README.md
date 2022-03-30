@@ -92,20 +92,16 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [google drive
 				├────BD
 					├────calendar
 					├────...
-					├────walk
 				├────HR
 					├────calendar
 					├────...
-					├────walk
 			├────UDM10
 				├────BD
 					├────archpeople
 					├────...
-					├────polyflow
 				├────HR
 					├────archpeople
 					├────...
-					├────polyflow
         ```
 
 ## Test
