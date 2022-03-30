@@ -142,6 +142,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_vimeo90
 4. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (also can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
 
 ## Citation
+If you find the code and pre-trained models useful for your research, please consider citing our paper. :blush:
 ```
 @InProceedings{liu2022learning,
 author = {Liu, Chengxu and Yang, Huan and Fu, Jianlong and Qian, Xueming},
