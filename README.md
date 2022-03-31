@@ -42,11 +42,11 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 * tensorboard == 2.6.0
 
 ## Model and Results
-Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing) and [baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc).
+Pre-trained models can be downloaded from [onedrive](https://1drv.ms/u/s!Au4fJlmAZDhlhwKdJU12DvvdSY0o?e=0lCRDN), [google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc).
 * *TTVSR_REDS.pth*: trained on REDS dataset with BI degradation.
 * *TTVSR_Vimeo90K.pth*: trained on Vimeo-90K dataset with BD degradation.
 
-The output results on REDS4, Vid4 and UMD10 can be downloaded from [google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing) and [baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc).
+The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](https://1drv.ms/u/s!Au4fJlmAZDhlhwKdJU12DvvdSY0o?e=0lCRDN), [google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc).
 
 
 ## Dataset
@@ -111,7 +111,7 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [google drive
 git clone https://github.com/ChengxuLiu/TTVSR.git
 cd TTVSR
 ```
-2. Download pre-trained weights ([google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing)|[baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc)) under `./checkpoint`
+2. Download pre-trained weights ([onedrive](https://1drv.ms/u/s!Au4fJlmAZDhlhwKdJU12DvvdSY0o?e=0lCRDN)|[google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing)|[baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc)) under `./checkpoint`
 3. Prepare testing dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
 4. Run test
 ```
