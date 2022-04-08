@@ -108,7 +108,7 @@ The output results on REDS4, Vid4 and UMD10 can be downloaded from [onedrive](ht
 ## Test
 1. Clone this github repo
 ```
-git clone https://github.com/ChengxuLiu/TTVSR.git
+git clone https://github.com/researchmm/TTVSR.git
 cd TTVSR
 ```
 2. Download pre-trained weights ([onedrive](https://1drv.ms/u/s!Au4fJlmAZDhlhwKdJU12DvvdSY0o?e=0lCRDN)|[google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing)|[baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc)) under `./checkpoint`
@@ -125,7 +125,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_test.sh configs/TTVSR_vimeo90k
 ## Train
 1. Clone this github repo
 ```
-git clone https://github.com/ChengxuLiu/TTVSR.git
+git clone https://github.com/researchmm/TTVSR.git
 cd TTVSR
 ```
 2. Prepare training dataset and modify "dataset_root" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`
