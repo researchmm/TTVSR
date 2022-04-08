@@ -11,6 +11,7 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
 - [Dataset](#dataset)
 - [Test](#test)
 - [Train](#train)
+- [Related Project](#related-project)
 - [Citation](#citation)
 - [Acknowledgment](#acknowledgment)
 - [Contact](#contact)
@@ -137,6 +138,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_reds4.p
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_vimeo90k.py 8
 ```
 4. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (also can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
+
+## Related Project
+We also sincerely recommend some other excellent works related to us. :sparkles: 
+* [TTSR](https://github.com/researchmm/TTSR):Learning Texture Transformer Network for Image Super-Resolution
+* [CKDN](https://github.com/researchmm/CKDN):Learning Conditional Knowledge Distillation for Degraded-Reference Image Quality Assessment
 
 ## Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :blush:
