@@ -7,11 +7,11 @@ This is the official PyTorch implementation of the paper [Learning Trajectory-Aw
   - [Overview](#overview)
   - [Visual](#Visual)
 - [Requirements and dependencies](#requirements-and-dependencies)
-- [Model and Results](#model-and-results)
+- [Model and results](#model-and-results)
 - [Dataset](#dataset)
 - [Test](#test)
 - [Train](#train)
-- [Related Project](#related-project)
+- [Related projects](#related-projects)
 - [Citation](#citation)
 - [Acknowledgment](#acknowledgment)
 - [Contact](#contact)
@@ -42,7 +42,7 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 * yapf == 0.31.0
 * tensorboard == 2.6.0
 
-## Model and Results
+## Model and results
 Pre-trained models can be downloaded from [onedrive](https://1drv.ms/u/s!Au4fJlmAZDhlhwKdJU12DvvdSY0o?e=0lCRDN), [google drive](https://drive.google.com/drive/folders/1dXzyi_9nMLC3FU7SKkvLEGOMyv0lfcV2?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/1xjGCnChxFxFcPs0cBVZ-ew)(nbgc).
 * *TTVSR_REDS.pth*: trained on REDS dataset with BI degradation.
 * *TTVSR_Vimeo90K.pth*: trained on Vimeo-90K dataset with BD degradation.
@@ -139,10 +139,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./tools/dist_train.sh configs/TTVSR_vimeo90
 ```
 4. The training results are saved in `./ttvsr_reds4` and `./ttvsr_vimeo90k` (also can be set by modifying "work_dir" in `configs/TTVSR_reds4.py` and `configs/TTVSR_vimeo90k.py`)
 
-## Related Project
+## Related projects
 We also sincerely recommend some other excellent works related to us. :sparkles: 
-* [TTSR](https://github.com/researchmm/TTSR):Learning Texture Transformer Network for Image Super-Resolution
-* [CKDN](https://github.com/researchmm/CKDN):Learning Conditional Knowledge Distillation for Degraded-Reference Image Quality Assessment
+* [TTSR: Learning Texture Transformer Network for Image Super-Resolution](https://github.com/researchmm/TTSR)
+* [CKDN: Learning Conditional Knowledge Distillation for Degraded-Reference Image Quality Assessment](https://github.com/researchmm/CKDN)
 
 ## Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :blush:
