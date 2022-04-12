@@ -1,5 +1,5 @@
 # TTVSR (CVPR2022, Oral)
-This is the official PyTorch implementation of the paper [Learning Trajectory-Aware Transformer for Video Super-Resolution](https://arxiv.org/pdf/2204.04216.pdf).
+This is the official PyTorch implementation of the paper [Learning Trajectory-Aware Transformer for Video Super-Resolution](https://arxiv.org/abs/2204.04216).
 
 ## Contents
 - [Introduction](#introduction)
