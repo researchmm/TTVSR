@@ -37,7 +37,8 @@ We propose a novel trajectory-aware Transformer, which is one of the first works
 * torchvision == 0.10.0
 * opencv-python == 4.5.3
 * mmcv-full == 1.3.9
-* scikit-image == 1.7.3
+* scipy==1.7.3
+* scikit-image == 0.19.0
 * lmdb == 1.2.1
 * yapf == 0.31.0
 * tensorboard == 2.6.0
