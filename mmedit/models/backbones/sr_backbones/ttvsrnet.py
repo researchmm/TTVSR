@@ -15,7 +15,7 @@ class TTVSRNet(nn.Module):
 
     Support only x4 upsampling.
     Paper:
-        Learning Trajectory-Aware Transformer for Video Super-Resolution, CVPR, 2021
+        Learning Trajectory-Aware Transformer for Video Super-Resolution, CVPR, 2022
 
     Args:
         mid_channels (int): Channel number of the intermediate features.
