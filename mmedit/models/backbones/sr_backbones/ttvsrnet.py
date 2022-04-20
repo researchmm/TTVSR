@@ -36,7 +36,7 @@ class TTVSRNet(nn.Module):
         super().__init__()
 
         self.mid_channels = mid_channels
-        self.keyframe_stride = keyframe_stride
+        self.keyframe_stride = frame_stride
         self.stride = stride
         # optical flow network for feature alignment
         self.spynet = SPyNet(pretrained=spynet_pretrained)
