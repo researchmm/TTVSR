@@ -1,5 +1,5 @@
 from .restoration_inference import restoration_inference
-from .restoration_video_inference import restoration_video_inference
+from .restoration_video_inference import init_model, restoration_video_inference
 from .test import multi_gpu_test, single_gpu_test
 from .train import set_random_seed, train_model
 
