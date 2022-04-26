@@ -162,5 +162,5 @@ This code is built on [mmediting](https://github.com/open-mmlab/mmediting). We t
 
 ## Contact
 If you meet any problems, please describe them in issues or contact:
-* Chengxu Liu: <liuchx97@gmail.com>
+* Chengxu Liu: <liuchx97@gmail.com> 
 
